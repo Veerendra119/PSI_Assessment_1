@@ -1,0 +1,169 @@
+
+1)
+
+import java.util.Scanner;
+
+public class Q1 {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+
+        System.out.println("Enter first number");
+        int Firstnumber = input.nextInt();
+
+        System.out.println("Enter second number");
+        int secondnumber = input.nextInt();
+        
+        System.out.println("Enter third number");
+        int thirdumber = input.nextInt();
+        
+        System.out.println("Enter fourth number");
+        int Fourthnumber = input.nextInt();
+
+        if((Firstnumber==secondnumber) && (thirdumber==Fourthnumber)){
+            System.out.println("They are equal");
+        }
+        else{
+            System.out.println("They are not equal");
+        }
+        
+    }
+    
+}
+
+
+2)
+
+
+import java.io.*;
+import java.util.*;
+import java.util.Scanner;
+
+
+public class Q2 {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+
+        System.out.println("Enter first input number");
+        double Firstnumber = input.nextDouble();
+
+        System.out.println("Enter Second input number");
+        double Secondnumber = input.nextDouble();
+
+        if((0<= Firstnumber && Firstnumber<=1) && (0<=Secondnumber && Secondnumber <=1)){
+            System.out.println("true");
+        }
+        else{
+            System.out.println("false");
+        }
+    }
+    
+}
+
+
+
+
+3)
+
+
+public class Q3 {
+    public static void main(String[] args) {
+        boolean[][]array={{true, false, true},
+        {false,true,false}};
+        
+        for(int i=0;i<2;i++){
+            for(int j =0;j<3;j++){
+                if(array[i][j]==true){
+                    System.out.print("t" + " ");
+                }
+                else{
+                    System.out.print("f" + " ");
+                }
+            }
+            System.out.println();
+        }
+    }
+    
+}
+
+
+4)
+
+
+
+import java.util.Scanner;
+public class Q4 {
+    public static void main(String[] args) {
+        Scanner mat = new Scanner(System.in);
+        System.out.println("Enter the number of rows");
+        int r=mat.nextInt();
+        System.out.println("Enetr the number of columns ");
+        int c=mat.nextInt();
+        int [][]arr = new int[r][c];
+
+        for(int i=0;i<r;i++){
+            for(int j=0;j<c;j++){
+                arr[i][j]=mat.nextInt();
+
+            }
+            
+        }
+        System.out.println("Originl matrix");
+        for(int i=0;i<r;i++){
+            for(int j=0;j<c;j++){
+                System.out.print(arr[i][j] +" ");
+            }
+            System.out.println();
+        }
+
+         System.out.println("new matrix is");
+         for(int i=0;i<c;i++){
+             for(int j=0;j<r;j++){
+                System.out.print(arr[j][i] +" ");
+             }
+             System.out.println();
+         }    
+    }
+
+}
+
+
+5)
+
+import java.util.*;
+import java.util.Scanner;
+public class Q5 {
+	
+    public static void main(String[] args) 
+    {
+        Integer arr[] = {1, 4, 17, 7, 25, 3, 100};
+        int k = 3;
+
+        Arrays.sort(arr, Collections.reverseOrder());         
+       for (int i = 0; i < k; i++) {
+          System.out.print(arr[i] + " ");
+       }
+       System.out.println("are the three largest elements of the said array are:");
+      
+        }
+
+
+  }
+
+
+6)
+
+import java.util.Scanner;
+public class Q6 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Enter the number");
+        int no = sc.nextInt();
+
+        String binarystr = Integer.toBinaryString(no);
+        System.out.println("the Binary value is " + binarystr);
+    }
+    
+}
+
+
